@@ -1,0 +1,8 @@
+a. What happens when you compile without "-z execstack"
+The NX protection can not be turned off to make the stack executable. 
+
+b. What happens if you enable ASLR? Does the return address change?
+It will randomly arranges the address spaces of processes, including stack, heap and libraries. The return address will change certainly.
+
+c. Does the address of the buffer[] in memory change when you run BOF using GDB, /home/root/Desktop/Lab2-BufferOverflows/BOF, and ./BOF
+Yes, it will change.
